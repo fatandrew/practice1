@@ -10,8 +10,8 @@ public class SumDigitsTest extends SumDigits {
     SumDigits sumDigits = new SumDigits();
     @Test
     public void testSumNumbers() throws Exception{
-        int number = -124;
-        int expected = 7;
+        int number = -2147483648;
+        int expected = 47;
         int actualResult = sumDigits.sum(number);
         Assert.assertEquals(expected, actualResult);
 
